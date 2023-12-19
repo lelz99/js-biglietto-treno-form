@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <!-- Scusate ragazzi ho dimenticato i commit -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <!-- CSS -->
@@ -13,6 +13,64 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    
+    <main class="container py-5">
+        <h2 class="h1 text-white fw-bold text-center mb-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 bg-white text-c-red rounded mb-5">
+                <form>
+                    <div class="row justify-content-center text-center py-3">
+                        <div class="col-3">
+                            <label class="mb-3 fs-5 fw-bold d-block" for="name">Nome Cognome</label>
+                            <input id="name" class="border-c-red rounded py-1" type="text">
+                        </div>
+                        <div class="col-3">
+                            <label class="mb-3 fs-5 fw-bold d-block" for="km">Km da percorrere</label>
+                            <input id="km" class="border-c-red rounded py-1" type="text">
+                        </div>
+                        <div class="col-3">
+                            <label class="mb-3 fs-5 fw-bold d-block" for="age">Fascia d'età</label>
+                            <input id="age" class="border-c-red rounded py-1" type="text">
+                        </div>
+                        <div class="col-12 pt-5">
+                            <button id="button" class="me-3 rounded text-c-red fs-5 fw-bold border-warning" type="button">Genera</button>
+                            <button id="button-null" class="rounded text-c-red fs-5 fw-bold border-1" type="button">Annulla</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h2 class="h1 text-white fw-bold text-center">IL TUO BIGLIETTO</h2>
+            <div class="col-12 bg-white">
+                <div class="row p-3">
+                    <div class="col-12 px-0">
+                        <h3 class="fw-bold">DETTAGLI PASSEGGERI</h3>
+                    </div>
+                    <div class="col-4 border bg-secondary">
+                        <h3 class="fw-bold mb-0 fs-4 px-4 pt-3">NOME PASSEGGERO</h3>
+                        <p id="name-passenger" class="fw-bold fs-4 px-4 "></p>
+                    </div>
+                    <div class="col-8 border">
+                        <table class="table">
+                            <thead>
+                              <tr class="fs-5 row mb-4">
+                                <th class="col-4 border-bottom-0">Offerta</th>
+                                <th class="col-2 border-bottom-0">Carrozza</th>
+                                <th class="col-3 border-bottom-0">Codice CP</th>
+                                <th class="col-3 border-bottom-0">Costo Biglietto</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="fs-5 row">
+                                <td id="ticket-type" class="col-4 border-bottom-0"></td>
+                                <td id="carriage" class="col-2 border-bottom-0"></td>
+                                <td id="booking-code" class="col-3 border-bottom-0"></td>
+                                <td id="price" class="col-3 border-bottom-0"></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

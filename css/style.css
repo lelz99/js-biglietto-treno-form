@@ -1,0 +1,13 @@
+body{
+    background-color: #b91450;
+}
+
+/* Utils */
+
+.text-c-red{
+    color: #b91450;
+}
+
+.border-c-red{
+    border-color: #b91450;
+}
